@@ -7,11 +7,11 @@ import router from "../router";
 
 const pageId = "main-page";
 const applicationId = "1234-5555-8888-9999";
+const clientID = "123456789";
 
-onMounted(() => {
   nid("start", [pageId]);
   nid("setUserId", [applicationId]);
-});
+
 
 const customerInfo = ref({
   name_first: "",
@@ -27,7 +27,7 @@ const customerInfo = ref({
   birth_date: "",
   document_ssn: "",
   neuro_user_id: applicationId,
-  site_id: pageId,
+  site_id: clientID,
 });
 
 // refs for zip code and ssn error messages
